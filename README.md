@@ -1,62 +1,87 @@
-#Unemployment Rate Forecasting Project
+# Unemployment Rate Forecasting by Age Group
 
-Project Overview
+## Overview
+This GitHub repository hosts a Python project that performs comprehensive analysis and forecasting of unemployment rates across various age groups. Utilizing various statistical models and data visualization techniques, this project aims to uncover patterns, distributions, and potential anomalies within unemployment data, as well as predict future trends.
 
-This project focuses on forecasting the unemployment rates across various age groups over the next decade using the SARIMAX model. The aim is to provide insights into future trends which could aid in economic planning and policy-making.
+## Features
 
-Contents
+### Data Visualization
+- **Histograms of Age Group Distributions**: Visualize the frequency distribution for different age groups to understand the variability within the data.
+- **Box Plots Over Time**: Explore how the statistical distribution of unemployment rates for each age group varies over the years.
 
-Introduction
-Data Sources
-Technologies Used
-Setup and Installation
-Usage
-Contributing
-License
-Introduction
+### Correlation Analysis
+- **Heatmaps**: Employ heatmaps to visualize the correlation between numerical features in the dataset, identifying potentially interesting patterns that may influence unemployment trends.
 
-This project analyzes historical unemployment data to forecast future rates. It is intended for economists, data scientists, and policy-makers interested in understanding labor market trends.
+### Anomaly Detection
+- **Isolation Forest**: Implement the Isolation Forest algorithm to detect outliers within the data, which can help in identifying data points that deviate significantly from the norm.
 
-Data Sources
+### Forecasting
+- **SARIMAX Model**: Use the Seasonal AutoRegressive Integrated Moving Average with eXogenous regressors model to forecast unemployment rates for the next 10 years, providing insights into future trends.
 
-The data used in this project includes historical unemployment rates categorized by age groups. It covers data from 2008 to the present and forecasts up to ten years into the future.
+## Technologies Used
+- Python
+- Pandas for data manipulation
+- Matplotlib for data visualization
+- Seaborn for heatmap generation
+- Scikit-Learn for anomaly detection
+- Statsmodels for time-series analysis
 
-Technologies Used
+## Installation
 
-Python 3.8
-Pandas: for data manipulation
-Matplotlib: for data visualization
-Statsmodels: for implementing the SARIMAX model
-Setup and Installation
+Clone the repository and install the necessary packages:
 
-bash
-Copy code
+```bash
 git clone https://github.com/Zzl85199/unemployment_rate_predict.git
 cd unemployment_rate_predict
 pip install -r requirements.txt
-Usage
+```
 
-To run the project, navigate to the project directory and execute the Jupyter Notebook:
+## Usage
 
-bash
-Copy code
+To run the analysis, navigate to the project directory and start the Jupyter Notebook:
+
+```bash
 jupyter notebook unemployment_rate_predict.ipynb
-Contributing
+```
 
-Contributions to the project are welcome. Please fork the project, make changes, and submit a pull request for review.
+This will open the notebook in your web browser where you can execute the provided code cells to see the analysis results and visualizations.
 
-License
+## Visualizations
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+- **Distribution of Age Groups**:
+  - Generates histograms showing the frequency of unemployment rates across different age groups.
 
-Explanation of Sections:
-Project Overview: Briefly describes what the project is about.
-Contents: Provides a clickable table of contents linked to sections of the README.
-Introduction: A more detailed description of the project's purpose and who it is for.
-Data Sources: Information about where the data is from and what it includes.
-Technologies Used: Lists the programming languages, libraries, and tools used.
-Setup and Installation: How to get the project running on a local machine.
-Usage: Instructions on how to use the project.
-Contributing: How others can contribute to the project.
-License: Information about the project's licensing.
-Feel free to adjust the content based on the specific aspects of your project and any additional sections you might need, such as "Features", "Acknowledgements", or "Contact Information".
+- **Unemployment Trends by Year**:
+  - Displays box plots to visualize the trends and variations in unemployment rates by year for each age group.
+
+- **Correlation Matrix**:
+  - A heatmap to illustrate the correlations between different numerical features.
+
+- **Anomaly Detection**:
+  - Visual representation of anomalies detected in the dataset using the Isolation Forest method.
+
+- **Forecasting Unemployment Rates**:
+  - Line plots showing predicted unemployment rates for the next decade, helping in policy formulation and economic planning.
+
+## Contributing
+
+Contributions to this project are welcome. Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b my-new-feature`.
+3. Make your changes and commit them: `git commit -am 'Add some feature'`.
+4. Push to the branch: `git push origin my-new-feature`.
+5. Submit a pull request.
+
+## Acknowledgments
+
+- Thanks to all the data providers for making the data available for analysis.
+
+## Contact
+
+For any further inquiries or issues, please contact [zzl] at [jonathan40507@gmail.com].
+
+## Support
+
+If you find any bugs or issues, please report them in the issues section of the GitHub repository, or even better, consider contributing a fix.
+
